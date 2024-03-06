@@ -38,20 +38,20 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-  // number counting
-  let valueDisplays = document.querySelectorAll(".num");
-  let interval = 4000;
+  // LightBox
 
-  valueDisplays.forEach((valueDisplay) => {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-    let duration = math.floor(interval / endValue);
-    let counter = setInterval(function () {
-      startValue += 1;
-      valueDisplay.textContent = startValue;
+  function lightbox() {
+    document.querySelectorAll('.lightbox-images-container .img-container img').forEach(image => {
 
-      if (startValue == endValue) {
-        clearInterval(counter);
-      }
-    }, duration);
+      image.onclick = () => {
+        document.querySelector('.lightbox').style.display = 'block';
+        document.querySelector('.lightbox .img-container img').src = image.getAttribute('src');
+      } 
+    
   });
+
+  document.querySelector('.lightbox span').onclick = () => {
+    document.querySelector('.lightbox').style.display = 'none';
+  }
+  }
+  lightbox();

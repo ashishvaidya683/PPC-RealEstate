@@ -30,18 +30,33 @@
             
             <div class="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Property</a></li>
-                    <li><a href="">SPECIFICATION</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#property">Property</a></li>
+                    <li><a href="#specifications">SPECIFICATION</a></li>
                 </ul>
-                <button class="download-btn">Download Brochure</button>
+                <button class="download-btn"><a href="../Udyana VP Deck-1.pdf">Download Brochure</a></button>
             </div>
 
             <div class="mobile-number">
                 <a href="tel:+918939000065">+91 89390 00065</a>
             </div>
             
+        </div>
+
+        <div class="top-bar">
+            <div class="mobile-number">
+                <a href="tel:+918939000065">+91 89390 00065</a>
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <button class="download-btn"><a href="../Udyana VP Deck-1.pdf">Download Brochure</a></button>
         </div>
 
     </header>
@@ -103,12 +118,12 @@
               </div>
         </section>
 
-        <section class="about-vengaivasal container">
+        <section id="about" class="about-vengaivasal container">
             <div class="title">
                 <h2>about vengaivasal</h2>
             </div>
             
-            <div class="flex-row">
+            <div class="flex-grid">
                 <div class="about-vengaivasal-elem">
                     <div class="img-container">
                         <div class="Neighborhood">
@@ -184,10 +199,10 @@
             </div>
         </section>
 
-        <section class="project-gallery container">
+        <section id="property" class="project-gallery container">
             <div class="title">
                 <h2>Gallery</h2>
-                <div class="gallery-container">
+                <div class="gallery-container lightbox-images-container">
                     <div class="img-container">
                         <img src="./img/03. 170 street view-min.jpg" alt="">
                     </div>
@@ -202,6 +217,8 @@
                     </div>
                     
                 </div>
+
+                
             </div>
 
         </section>
@@ -246,7 +263,7 @@
 
         </section>
 
-        <section class="nearby-section container">
+        <section id="specifications" class="nearby-section  container">
             <div class="title">
                 <h2>Location Highlights</h2>
             </div>
@@ -323,7 +340,7 @@
                         <span>On-Goind Progects:</span>
                     </div>
                     <div class="right-elem">
-                        <span>7 (Aaranya | GreenAcres | Green Enclave Elements | Peninsula | Hamlet | Luxor)</span>
+                        <span>7 (Aaranya | GreenAcres | Green Enclave | Elements | Peninsula | Hamlet | Luxor)</span>
                     </div>
                 </div>
 
@@ -399,18 +416,21 @@
             </div>
         </section>
 
-        <section class="master-plan-layout">
+        <section class="master-plan-layout container">
             <div class="title">
                 <h2>Master Layout plan</h2>
             </div>
 
-            <div class="img-container">
-                <img src="./img/master paln layout-min.png" alt="">
+            <div class="lightbox-images-container">
+                <div class="img-container bg-white">
+                    <img src="./img/master paln layout-min.png" alt="">
+                </div>
             </div>
+            
         </section>
         
         <!-- Block A Plot No.170 Rooms -->
-        <section class="room-section">
+        <section class="room-section container">
             <h3>Block A</h3>
             <!-- Room listings will be dynamically generated here -->
             <div id="rooms">
@@ -460,7 +480,7 @@
         </section>
 
         <!-- Block B Plot No.170 Rooms -->
-        <section class="room-section">
+        <section class="room-section container">
             <h3>Block B</h3>
             <!-- Room listings will be dynamically generated here -->
             <div id="rooms">
@@ -507,21 +527,72 @@
                 <!-- Add more room listings as needed -->
             </div>
             
-        </section>
+        </section>  
 
-        
-        
+        <div class="lightbox">
+            <span>&times;</span>
+            <div class="img-container">
+                <img src="./img/04. Avenue-min.jpg" alt="">
+            </div>
+        </div>
     </main>
+
+        <!-- footer -->
+    <footer>
+        <div class="title">
+            <h2>Connect with us</h2>
+        </div>
+        <div class="footer-container container">
+            
+            <div class="right-footer">
+
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                            <p>Address</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                            <p>Whatsapp</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                            <p>Email</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="left-footer">
+                <form id="contactForm">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="number">Number:</label>
+                      <input type="tel" id="number" name="number" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </footer>
 
     
     <div class="overlay">
         <div class="overlay-content"></div>
         <button class="close-btn">Close</button>
     </div>
-    <!-- footer -->
-    <footer class="container">
-       
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
