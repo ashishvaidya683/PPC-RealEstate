@@ -259,8 +259,8 @@ main .project-gallery .gallery-container .img-container {
 main .project-gallery .gallery-container .img-container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .connectivity-section {
   text-align: center;
