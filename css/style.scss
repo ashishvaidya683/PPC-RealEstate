@@ -446,6 +446,115 @@
         }
     }
 
+    .about-developer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .tvs-logo-container{
+            width: 100%;
+            height: 150px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        p{
+            text-align: left;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .table{
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            border: 1px solid #ccc;
+
+            .table-elem{
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                justify-content: start;
+                border: 1px solid #ccc;
+                padding: 10px;
+
+                .left-elem{
+                    width: 30%;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #5e5e5ed3;
+
+                }
+                .right-elem{
+                    width: 70%;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #5e5e5ed3;
+                }
+            }
+        }
+
+        .highlights{
+            display:flex;
+            flex-direction: column;
+
+            .highlight-title{     
+
+                margin-top: 30px;
+                background-color: #5D755D;
+                color: #fff;
+                text-transform: uppercase;
+                text-align: center;
+                border-radius: 5px;
+            }    
+            
+            .highlight-content{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .highlight-elem{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 20%;
+
+                    span{
+                        color: #5D755D;
+                        font-size: 50px;
+                        font-weight: 600;
+                    }
+
+                    p{
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .master-plan-layout{
+
+        .img-container{
+            background-color: #FFF;
+            width: 100%;
+            height: 600px;
+            
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
 
     .room-section{
         display: flex;
