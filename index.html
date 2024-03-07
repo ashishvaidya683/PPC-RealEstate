@@ -35,20 +35,16 @@
                     <li><a href="#property">Property</a></li>
                     <li><a href="#specifications">SPECIFICATION</a></li>
                 </ul>
-                <button class="download-btn"><a href="../Udyana VP Deck-1.pdf">Download Brochure</a></button>
+                <button class="download-btn" onclick="openPopup()">Download Brochure</button>
             </div>
 
             <div class="mobile-number">
-                <a href="tel:+918939000065">+91 89390 00065</a>
+                <a href="tel:+918939000065">Call Now</a>
             </div>
             
         </div>
 
-        <div class="top-bar">
-            <div class="mobile-number">
-                <a href="tel:+918939000065">+91 89390 00065</a>
-            </div>
-        </div>
+        
         <div class="mobile-nav">
             <div class="logo">
                 <a href="./index.html">
@@ -114,6 +110,8 @@
                     </div>
 
                     <p>rera no. TN/01/BUILDING/0092/2023 | TN/01/BUILDING/0088/2023</p>
+
+                    <button class="download-btn" onclick="openPopup()">Get Offer</button>
                 </div>
               </div>
         </section>
@@ -323,6 +321,10 @@
                 </div>
             </div>
         </section>
+
+        <section class="location container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15556.213398622544!2d80.1700583!3d12.9042911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f5cb3e95929%3A0xa5e58484196fa90c!2sTVS%20Emerald%20Aaranya%20-%20Villas%20Near%20Medavakkam%2C%20Chennai!5e0!3m2!1sen!2sin!4v1709818655035!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
         
         <section class="about-developer container">
             <div class="title">
@@ -337,7 +339,7 @@
             <div class="table">
                 <div class="table-elem">
                     <div class="left-elem">
-                        <span>On-Goind Progects:</span>
+                        <span>On-Going Progects:</span>
                     </div>
                     <div class="right-elem">
                         <span>7 (Aaranya | GreenAcres | Green Enclave | Elements | Peninsula | Hamlet | Luxor)</span>
@@ -358,7 +360,7 @@
                         <span>Upcoming Projects:</span>
                     </div>
                     <div class="right-elem">
-                        <span>3 (LakeSshore| Udyana | Thaiyur)</span>
+                        <span>1 (Thaiyur)</span>
                     </div>
                 </div>
 
@@ -403,15 +405,6 @@
                         <p>Home Sold
                         </p>
                     </div>
-
-                    <div class="highlight-elem">
-                        <span class="num" data-val="400">
-                            50%
-                        </span>
-                        <p>Overall
-                            Channel Partner Contribution                            
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -434,49 +427,576 @@
             <h3>Block A</h3>
             <!-- Room listings will be dynamically generated here -->
             <div id="rooms">
-                <div class="room">
-                    <div class="upper-container">
-                        <div class="img-container">
-                            <img src="./img/2BHK room.png" alt="Room 1">
+                <div class="swiper2 mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
                         </div>
-                        <h2>2BHK Apartment</h2>
-                    </div>
-                    <div class="lower-container">
-                        <div class="button-container">
-                            <button class="enqury-btn">Enqury Now</button>
-                            <button class="more-info-btn">More Info</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
                         </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    
-                    <div class="details hidden">
-                        <!-- Details will be shown here -->
-                        <p>Details about the 2BHK apartment...</p>
-                    </div>
-                </div>
+                  </div>
+                
 
-                <div class="room">
-                    <div class="upper-container">
-                        <div class="img-container">
-                            <img src="./img/2BHK (2) room.png" alt="Room 1">
-                        </div>
-                        <h2>2BHK Apartment</h2>
-                    </div>
-                    <div class="lower-container">
-                        <div class="button-container">
-                            <button class="enqury-btn">Enqury Now</button>
-                            <button class="more-info-btn">More Info</button>
-                        </div>
-                    </div>
-                    
-                    <div class="details hidden">
-                        <!-- Details will be shown here -->
-                        <p>Details about the 2BHK apartment...</p>
-                    </div>
-                </div>
+                
     
                 <!-- Add more room listings as needed -->
-            </div>
-            
+            </div>           
         </section>
 
         <!-- Block B Plot No.170 Rooms -->
@@ -484,50 +1004,578 @@
             <h3>Block B</h3>
             <!-- Room listings will be dynamically generated here -->
             <div id="rooms">
-                <div class="room">
-                    <div class="upper-container">
-                        <div class="img-container">
-                            <img src="./img/2BHK room.png" alt="Room 1">
+                <div class="swiper2 mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
                         </div>
-                        <h2>2BHK Apartment</h2>
-                    </div>
-                    <div class="lower-container">
-                        <div class="button-container">
-                            <button class="enqury-btn">Enqury Now</button>
-                            <button class="more-info-btn">More Info</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
                         </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="room">
+                            <div class="upper-container">
+                                <div class="img-container">
+                                    <img src="./img/2BHK room.png" alt="Room 1">
+                                </div>
+                                <h2>2BHK Apartment</h2>
+                            </div>
+                            <div class="lower-container">
+                                <div class="button-container">
+                                    <button class="enqury-btn" onclick="openPopup()">Enqury Now</button>
+                                    <button class="more-info-btn">More Info</button>
+                                </div>
+                            </div>
+                            
+                            <div class="details hidden">
+                                <!-- Details will be shown here -->
+                                <h2>Unit No - A101 To A501</h2>
+                                <h6>Facing - West</h6>
+                                
+                                <table>
+                                        <tr>
+                                            <th>Rera carpet Area</th>
+                                            <th>rera balcony area</th>
+                                            <th>saleable Area</th>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>638 SQ.Ft</td>
+                                            <td>30 Sq.Ft</td>
+                                            <td>1012 Sq.ft</td>
+                                        </tr>
+        
+                                </table>
+        
+                                <ul>
+                                    <h5>Notable features of the project include:</h5>
+                                    <li>
+                                        Immerse yourself in a lavish lifestyle within our expansive 15.6-acre development, surrounded by nature's beauty.
+                                    </li>
+        
+                                    <li>
+                                        Escape to tranquillity with 2 acres of meticulously crafted landscaped greens, providing a serene backdrop to your everyday life.
+                                    </li>
+        
+                                    <li>
+                                        Experience the freedom of open spaces, as 62% of our project is dedicated in providing a breath of fresh air and room to roam.
+                                    </li>
+        
+                                    <li>
+                                        Take a stroll along our thoughtfully designed avenues, adorned with over 700 majestic trees, creating a green haven within the city.
+                                    </li>
+                                    <li>
+                                        Indulge in a lifestyle of luxury with over 75 top-notch amenities that redefine the standard of modern living.
+                                    </li>
+        
+                                    <li>
+                                        Harmony meets design with our Vaastu compliant homes, ensuring a perfect balance of energy and tranquillity in every living space.
+                                    </li>
+                                    <li>
+                                        Secured Gated Community with state of the art security systems for your peace of mind.
+                                    </li>
+                                </ul>
+        
+                                <table>
+                                    <h3>Payment Plan</h3>
+                                    <tr>
+                                        <th>Instalment No.</th>
+                                        <th>Construction Linked Milestone Payments</th>
+                                        <th>% Payment</th>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>1</td>
+                                        <td>On booking (Agrrement signing)</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Within 15 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Within 60 days from booking</td>
+                                        <td class="blur">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Within 120 days from booking</td>
+                                        <td class="blur">15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>On completion of flooring or 15th Sep'24 wichever is earlier</td>
+                                        <td class="blur">10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>On handing over</td>
+                                        <td class="blur">5%</td>
+                                    </tr>
+        
+        
+                                </table>
+        
+                                <button class="download-btn" onclick="openPopup()">
+                                    Contact us
+                                </button>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                    
-                    <div class="details hidden">
-                        <!-- Details will be shown here -->
-                        <p>Details about the 2BHK apartment...</p>
-                    </div>
-                </div>
+                  </div>
+                
 
-                <div class="room">
-                    <div class="upper-container">
-                        <div class="img-container">
-                            <img src="./img/2BHK (2) room.png" alt="Room 1">
-                        </div>
-                        <h2>2BHK Apartment</h2>
-                    </div>
-                    <div class="lower-container">
-                        <div class="button-container">
-                            <button class="enqury-btn">Enqury Now</button>
-                            <button class="more-info-btn">More Info</button>
-                        </div>
-                    </div>
-                    
-                    <div class="details hidden">
-                        <!-- Details will be shown here -->
-                        <p>Details about the 2BHK apartment...</p>
-                    </div>
-                </div>
+                
     
                 <!-- Add more room listings as needed -->
-            </div>
-            
-        </section>  
+            </div>           
+        </section>
+
 
         <div class="lightbox">
             <span>&times;</span>
@@ -537,62 +1585,34 @@
         </div>
     </main>
 
-        <!-- footer -->
-    <footer>
-        <div class="title">
-            <h2>Connect with us</h2>
-        </div>
-        <div class="footer-container container">
-            
-            <div class="right-footer">
-
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                            <p>Address</p>
-                    </li>
-
-                    <li>
-                        <i class="fa-brands fa-whatsapp"></i>
-                            <p>Whatsapp</p>
-                    </li>
-
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                            <p>Email</p>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="left-footer">
-                <form id="contactForm">
-                    <div class="form-group">
-                      <label for="name">Name:</label>
-                      <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email:</label>
-                      <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="number">Number:</label>
-                      <input type="tel" id="number" name="number" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="message">Message:</label>
-                      <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit">Submit</button>
-                  </form>
-            </div>
-        </div>
-    </footer>
-
     
     <div class="overlay">
         <div class="overlay-content"></div>
         <button class="close-btn">Close</button>
     </div>
+
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
+          <h2>Connect With Us</h2>
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
