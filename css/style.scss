@@ -1102,6 +1102,10 @@
     }
 }
 
+/* Add media query for mobile devices */
+
+
+
   .overlay {
     position: fixed;
     top: 0;
@@ -1115,11 +1119,6 @@
     z-index: 999;
 
     /* Additional styles for mobile responsiveness */
-@media (max-width: 768px) {
-    .overlay-content {
-        width: 100%; /* 100% of viewport width for mobile */
-    }
-  }
 
     .overlay-content {
         position: absolute;
@@ -1187,6 +1186,77 @@
         padding: 10px 20px;
         cursor: pointer;
       }
+  }
+
+  @media (max-width: 768px) {
+    .overlay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0); /* Transparent background */
+        width: 0;
+        overflow-x: hidden;
+        transition: background-color 0.5s, width 0.5s;
+        z-index: 999;
+        .overlay-content {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%; /* 50% of viewport width */
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Enable scrolling if content exceeds viewport height */
+    
+            h2{
+               color: #456845;
+               margin-bottom: 10px;
+            }
+    
+            h6{
+                background-color: #456845;
+                text-align: center;
+                width: 50%;
+                color: #fff;
+                margin-bottom: 20px;
+                padding: 5px;
+                text-transform: uppercase;
+            }
+    
+            table,tr,td,th{           
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 500;
+                border: 1px solid #00000066;
+                border-collapse: collapse;
+            }
+    
+            table{
+                margin-bottom: 20px;
+                tr{
+                    th,td{
+                        padding: 10px;
+                    }
+                }
+            }
+    
+            ul{
+                padding: 10px 30px 20px 30px;
+                list-style-type: circle;
+                h5{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
   }
 
   .overlay.active {

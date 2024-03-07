@@ -893,6 +893,7 @@ main .room-section #rooms .room .details h2 {
      object-fit: contain;
 }
 
+/* Add media query for mobile devices */
 .overlay {
   position: fixed;
   top: 0;
@@ -905,11 +906,6 @@ main .room-section #rooms .room .details h2 {
   transition: background-color 0.5s, width 0.5s;
   z-index: 999;
   /* Additional styles for mobile responsiveness */
-}
-@media (max-width: 768px) {
-  .overlay .overlay-content {
-    width: 100%; /* 100% of viewport width for mobile */
-  }
 }
 .overlay .overlay-content {
   position: absolute;
@@ -970,6 +966,68 @@ main .room-section #rooms .room .details h2 {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    width: 0;
+    overflow-x: hidden;
+    transition: background-color 0.5s, width 0.5s;
+    z-index: 999;
+  }
+  .overlay .overlay-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* 50% of viewport width */
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable scrolling if content exceeds viewport height */
+  }
+  .overlay .overlay-content h2 {
+    color: #456845;
+    margin-bottom: 10px;
+  }
+  .overlay .overlay-content h6 {
+    background-color: #456845;
+    text-align: center;
+    width: 50%;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+  .overlay .overlay-content table, .overlay .overlay-content tr, .overlay .overlay-content td, .overlay .overlay-content th {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-collapse: collapse;
+  }
+  .overlay .overlay-content table {
+    margin-bottom: 20px;
+  }
+  .overlay .overlay-content table tr th, .overlay .overlay-content table tr td {
+    padding: 10px;
+  }
+  .overlay .overlay-content ul {
+    padding: 10px 30px 20px 30px;
+    list-style-type: circle;
+  }
+  .overlay .overlay-content ul h5 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 .overlay.active {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   width: 100%; /* Full width */
