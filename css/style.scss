@@ -1102,9 +1102,6 @@
 }
 
 /* Add media query for mobile devices */
-
-
-
   .overlay {
     position: fixed;
     top: 0;
@@ -1277,4 +1274,23 @@ button{
 }
 .blur{
     filter: blur(3px);
+}
+
+.WhatsApp-btn{
+    position: fixed;
+    z-index: 100000;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+
+    .img-container{
+        width: 100%;
+        height: 65px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }
