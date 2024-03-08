@@ -1,28 +1,33 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const roomListings = document.querySelectorAll('.room');
-  const overlay = document.querySelector('.overlay');
-  const overlayContent = document.querySelector('.overlay-content');
-  const closeBtn = document.querySelector('.close-btn');
-
-  roomListings.forEach(room => {
-      const moreInfoBtn = room.querySelector('.more-info-btn');
-      const details = room.querySelector('.details');
-
-      moreInfoBtn.addEventListener('click', () => {
-          const roomInfo = details.innerHTML; // Dynamically capture the current HTML content
-          overlayContent.innerHTML = roomInfo;
-          overlay.classList.add('active');
-      });
+// Room Slider
+function roomSlider() {
+  document.addEventListener('DOMContentLoaded', function () {
+    const roomListings = document.querySelectorAll('.room');
+    const overlay = document.querySelector('.overlay');
+    const overlayContent = document.querySelector('.overlay-content');
+    const closeBtn = document.querySelector('.close-btn');
+  
+    roomListings.forEach(room => {
+        const moreInfoBtn = room.querySelector('.more-info-btn');
+        const details = room.querySelector('.details');
+  
+        moreInfoBtn.addEventListener('click', () => {
+            const roomInfo = details.innerHTML; // Dynamically capture the current HTML content
+            overlayContent.innerHTML = roomInfo;
+            overlay.classList.add('active');
+        });
+    });
+  
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('active');
+    });
   });
-
-  closeBtn.addEventListener('click', () => {
-      overlay.classList.remove('active');
-  });
-});
+}
+roomSlider();
 
 
-// Swiper
-var swiper = new Swiper(".mySwiper", {
+// Banner Swiper
+function bannerSwiper() {
+  var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -38,7 +43,8 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
-
+}
+bannerSwiper();
   // LightBox
 
   function lightbox() {
@@ -58,10 +64,13 @@ var swiper = new Swiper(".mySwiper", {
   lightbox();
 
   // PopUp js code
+function popUp() {
   document.addEventListener('DOMContentLoaded', function() {
     openPopup(); // Open popup when the website loads
   });
-  
+}
+popUp();  
+
   function openPopup() {
     document.getElementById('contact-popup').style.display = 'block';
   }
@@ -71,7 +80,7 @@ var swiper = new Swiper(".mySwiper", {
   }
   
   // Room Swiper
-
+function roomSwiper() {
   var swiper2 = new Swiper(".mySwiper2", {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -94,3 +103,23 @@ var swiper = new Swiper(".mySwiper", {
       },
     },
   });
+}
+roomSwiper();
+
+  // Send Email
+  function sendEmail(){
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "codespheredigital@gmail.com",
+        Password: "B5321FB0D92F242BF137398FDA60D011CFD0",
+      To : 'ashishvaidya683@gmail.com',
+      From : "codespheredigital@gmail.com",
+      Subject : "Enquiry for UDYANA",
+      Body : "Name:"+ document.getElementById("name").value
+             + "<br/> Email:" + document.getElementById("email").value
+             +"<br/> Phone Number:" + document.getElementById("phone").value
+             +"<br/> Message:" + document.getElementById("message").value
+  }).then(
+    message => alert("Message sent succefully!")
+  );
+  }

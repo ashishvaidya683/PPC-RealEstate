@@ -774,6 +774,14 @@ main .room-section #rooms .room .details h2 {
   color: #456845;
 }
 
+footer {
+  background-color: rgba(69, 104, 69, 0.2156862745);
+  padding: 20px;
+}
+footer p {
+  text-align: center;
+}
+
 .popup {
   display: none;
   position: fixed;
@@ -809,32 +817,16 @@ main .room-section #rooms .room .details h2 {
 .popup .popup-content .close-btn:hover {
   color: #456845;
 }
-
-#contact-form {
-  display: flex;
-  flex-direction: column; /* Arrange form items in a column */
-  align-items: center; /* Align form items in the center */
-}
-
-#contact-form label {
-  margin-bottom: 10px;
-}
-
-#contact-form input[type=text],
-#contact-form input[type=email],
-#contact-form textarea {
+.popup .popup-content form input, .popup .popup-content form textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
-  border: 1px solid #456845;
+  border: 1px solid rgba(69, 104, 69, 0.4745098039);
+  color: #456845;
+  outline: none;
 }
-
-#contact-form textarea {
-  height: 100px;
-}
-
-#contact-form button {
+.popup .popup-content form button {
   background-color: #5D755D; /* Change button color */
   color: #fff;
   width: 100%;
@@ -843,8 +835,7 @@ main .room-section #rooms .room .details h2 {
   border-radius: 5px;
   cursor: pointer;
 }
-
-#contact-form button:hover {
+.popup .popup-content form button:hover {
   background-color: #456845; /* Change button hover color */
 }
 

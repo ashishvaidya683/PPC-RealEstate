@@ -919,6 +919,15 @@
 
   }
 
+  footer{
+    background-color: #45684537;
+    padding: 20px;
+
+    p{
+        text-align: center;
+    }
+  }
+
 //   footer{
 
 //     .footer-container{
@@ -1010,47 +1019,37 @@
           .close-btn:hover {
             color: #456845;
           }
+
+          form{
+                input, textarea{
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 10px;
+                    box-sizing: border-box;
+                    border: 1px solid #45684579;
+                    color: #456845;
+                    outline: none;                    
+                }
+
+            button{
+                background-color: #5D755D; /* Change button color */
+                color: #fff;
+                width: 100%;
+            
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: #456845; /* Change button hover color */
+            }
+        }
       }
 }
   
-  #contact-form {
-    display: flex;
-    flex-direction: column; /* Arrange form items in a column */
-    align-items: center; /* Align form items in the center */
-  }
-  
-  #contact-form label {
-    margin-bottom: 10px;
-  }
-  
-  #contact-form input[type="text"],
-  #contact-form input[type="email"],
-  #contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid #456845;
-  }
-  
-  #contact-form textarea {
-    height: 100px;
-  }
-  
-  #contact-form button {
-    background-color: #5D755D; /* Change button color */
-    color: #fff;
-    width: 100%;
 
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #contact-form button:hover {
-    background-color: #456845; /* Change button hover color */
-  }
   
   .lightbox-images-container{
 
