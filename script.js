@@ -109,17 +109,17 @@ roomSwiper();
   // Send Email
   function sendEmail(){
     Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "codespheredigital@gmail.com",
-        Password: "B5321FB0D92F242BF137398FDA60D011CFD0",
-      To : 'ashishvaidya683@gmail.com',
-      From : "codespheredigital@gmail.com",
+      Host : "smtp.elasticemail.com",
+      Username : "promotionalrealestate@gmail.com",
+      Password : "7D34D9615EE769A77A06F00B1EB25BDF1F86",
+      To : 'promotionalrealestate@gmail.com',
+      From : "promotionalrealestate@gmail.com",
       Subject : "Enquiry for UDYANA",
-      Body : "Name:"+ document.getElementById("name").value
-             + "<br/> Email:" + document.getElementById("email").value
-             +"<br/> Phone Number:" + document.getElementById("phone").value
-             +"<br/> Message:" + document.getElementById("message").value
+      Body : "Name:" + document.getElementById('name').value
+            + "<br/> Email:" + document.getElementById('email').value
+            + "<br/>Mobile Number:" + document.getElementById('phone').value
+            + "<br/>Message:" + document.getElementById('message').value
   }).then(
-    message => alert("Message sent succefully!")
+    message => alert(message)
   );
   }
